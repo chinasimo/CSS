@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 第一个
+        // var time = prompt('请输入时间');
+        // if (time >= 23) {
+        //     alert('深夜好')
+        // } else if (time >= 18) {
+        //     alert('傍晚好')
+        // } else if (time >= 12) {
+        //     alert('中午好')
+        // } else if (time < 12) {
+        //     alert('早上好')
+        // }
+
+
+        // 第二个
+        // var num1 = prompt('请输入第一个值');
+        // var num2 = prompt('请输入第二个值');
+        // if (num1 > num2) {
+        //     alert('最大值:' + num1)
+        // } else if (num2 > num1) {
+        //     alert('最大值:' + num2)
+        // } else {
+        //     alert('他们相等且最大值为：' + num2)
+        // }
+
+        // 第三个
+        // var num = prompt('请输入一个整数');
+        // if (num % 2 == 0) {
+        //     alert('这个数为偶数')
+        // } else if (num % 2 == 1) {
+        //     alert('这个数为奇数')
+        // }
+
+        // 第四个
+        // var day = prompt('请输入1~7的数字');
+        // switch (day) {
+        //     case '1':
+        //         alert('今天星期一');
+        //         break;
+        //     case '2':
+        //         alert('今天星期二');
+        //         break;
+        //     case '3':
+        //         alert('今天星期三');
+        //         break;
+        //     case '4':
+        //         alert('今天星期四');
+        //         break;
+        //     case '5':
+        //         alert('今天星期五');
+        //         break;
+        //     case '6':
+        //         alert('今天星期六');
+        //         break;
+        //     case '7':
+        //         alert('今天星期七');
+        //         break;
+        //     default:
+        //         alert('你输入有误')
+        // }
+
+
+        // 第五个
+        // var money = prompt('班长有多少钱');
+        // if (money >= 2000) {
+        //     alert('lg')
+        // } else if (money >= 1500) {
+        //     alert('md')
+        // } else if (money >= 1000) {
+        //     alert('sm')
+        // } else if (money >= 500) {
+        //     alert('xs')
+        // } else(money < 500) {
+        //     alert('xxs')
+        // }
+
+        // 1.求1~100所有数的平均值
+        // var sum = 0;
+        // var average = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     sum += i;
+        // }
+        // average = sum / 100;
+        // console.log(average);
+
+
+        // 2.求1~100偶数和奇数的和
+        // var even = 0;
+        // var odd = 0;
+        // for (var i = 0; i <= 100; i++) {
+        //     if (i % 2 == 0) {
+        //         even += i;
+        //     } else {
+        //         odd += i
+        //     }
+        // }
+        // console.log(even);
+        // console.log(odd);
+
+        // 2.求1~100整除3的数和
+        // var sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 3 == 0) {
+        //         sum += i;
+        //     }
+        // }
+        // console.log(sum);
+
+
+        // var num = prompt('请输入班级人数');
+        // var sum = 0;
+        // var average = 0;
+        // for (var i = 1; i <= num; i++) {
+        //     var score = prompt('请输入第' + i + '位学生成绩');
+        //     sum = sum + parseInt(score);
+        // }
+        // average = sum / num;
+        // alert('班级平均分为' + average);
+        // alert('班级总分为' + sum);
+
+
+        // var str = '';
+        // for (var i = 1; i <= 9; i++) {
+        //     for (var j = 1; j <= i; j++) {
+        //         // str = str + '1';
+        //         str += i + '×' + j + '=' + i * j + '\t';
+        //     }
+        //     str = str + '\n';
+        // }
+        // console.log(str);
+
+        // var message = prompt('do you love me');
+        // while (message !== 'l love you') {
+        //     message = prompt('do you love me');
+        // }
+        // alert('me too')
+
+        // var i = 0;
+        // var ave = 0;
+        // var sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     sum += i;
+        // }
+        // ave = sum / 100;
+        // alert(sum);
+        // alert(ave);
+
+
+        // var i = 0;
+        // var even = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 2 == 0) {
+        //         even += i;
+        //     }
+        // }
+        // alert(even);
+
+        // var sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 7 == 0) {
+        //         sum += i;
+        //     }
+        // }
+        // alert(sum)
+
+        // var str = '';
+        // for (var i = 0; i <= 5; i++) {
+        //     for (var j = 0; j <= 5; j++) {
+        //         str += '★';
+        //     }
+        //     str = str + '\n';
+        // }
+        // console.log(str);
+
+
+        // var str = '';
+        // for (var i = 1; i <= 9; i++) {
+        //     for (var j = 1; j <= i; j++) {
+        //         str += i + '×' + j + '=' + i * j + '\t';
+        //     }
+        //     str = str + '\n';
+        // }
+        // console.log(str);
+
+        // var user = prompt('请输入用户名');
+        // var password = prompt('请输入密码');
+        // while (user !== 'admin') {
+        //     user = prompt('请输入用户名');
+        // }
+        // while (password !== '123456') {
+        //     password = prompt('请输入密码');
+        // }
+        // alert('登录成功')
+
+
+
+        // var sum = 0;
+        // for (var i = 0; i <= 100; i++) {
+        //     if (i % 10 == 0) {
+        //         continue;
+        //     }
+        //     sum += i;
+        // }
+        // console.log(sum);
+
+        // 1.操作1存钱，用save变量保存；操作2取钱，用take变量；操作3余额=save-take；操作4退出
+        // 2.用switch、case来做
+        // var money = 100;
+        // var moneySum = 0 + parseInt(money);
+        // var num = parseInt(prompt('请输入您要的操作' + '\n' + '1.存钱' + '\n' + '2.取钱' + '\n' + '3.查看余额' + '\n' + '4.退出' + '\n'));
+        // switch (num) {
+        //     // 存钱操作
+        //     case 1:
+        //         var cun = parseInt(prompt('how much do you want to save'));
+        //         console.log(cun);
+        //         var moneySum = parseInt(cun) + parseInt(money);
+        //         alert('您的余额' + moneySum);
+        //         console.log(moneySum);
+
+
+        //         // 取钱操作  
+        //     case 2:
+        //         var qu = parseInt(prompt('how much do you want to take'));
+        //         console.log(qu);
+        //         var yue = parseInt(moneySum) - parseInt(qu);
+
+        //         if (qu > moneySum) {
+        //             alert('您的余额已不足');
+        //         } else {
+        //             alert('您的余额' + yue);
+        //         }
+        //         console.log(yue)
+        //             // 查询余额
+        //     case 3:
+        //         alert('您的余额' + money);
+        //         // 退出
+        //     case 4:
+        //         var flag = prompt("是否继续？(Y/N)");
+        //         while (flag !== ('Y' && 'y')) {
+        //             flag = prompt("是否继续？(Y/N)");
+        //         }
+        //         alert('退出成功');
+        //     default:
+        //         alert('输入错误请重试');
+
+        // }
+
+        // var name = ['在过一组', 'n苏打粉', '胜多负少', '胜多负少'];
+        // for (var i = 0; i < name.length; i++) {
+        //     console.log(name[i]);
+
+        // }
+
+        // var num = [2, 6, 1, 7, 4];
+        // var sum = 0;
+        // var ave = 0;
+        // for (var i = 0; i < num.length; i++) {
+        //     sum += num[i];
+        // }
+        // ave = sum / num.length;
+        // console.log(ave + '\n' + sum);
+
+        // var color = ['red', 'green', 'blue', 'pink'];
+        // var str = '';
+        // var sep = '|';
+        // for (var i = 0; i < color.length; i++) {
+        //     str += color[i] + '|';
+        // }
+        // console.log(str);
+        // var num = [];
+        // for (var i = 0; i < 10; i++) {
+        //     num[i ] = i + 1;
+        // }
+        // console.log(num);
+
+        // var newArr = [];
+        // var num = [10, 5, 77, 66, 0, 0, 11, 22];
+
+        // for (var i = 0; i < num.length; i++) {
+        //     if (num[i] !== 0) {
+        //         newArr[newArr.length] = num[i];
+        //     }
+        // }
+        // console.log(newArr);
+
+        // var color = ['red', 'green', 'blue', 'pink'];
+        // var newArr = [];
+        // for (var i = color.length - 1; i >= 0; i--) {
+        //     newArr[newArr.length] = color[i];
+        // }
+        // console.log(newArr);
+
+        // var num = [5, 4, 3, 2, 1];
+
+        // for (var i = 0; i <= num.length - 1; i++) {
+        //     for (var j = 0; j <= num.length - i - 1; j++) {
+        //         if (num[j] > num[j + 1]) {
+        //             var temp = num[j];
+        //             num[j] = num[j + 1];
+        //             num[j] = temp;
+        //         }
+        //     }
+        // }
+        // console.log(num);
+
+        // function getMax(num1, num2) {
+        //     // if (num1 >= num2) {
+        //     //     return num1;
+        //     // } else {
+        //     //     return num2;
+        //     // }
+        //     return num1 >= num2 ? num1 : num2;
+        // }
+        // alert(getMax(4, 2));
+
+        // function getArrMax(arr) {
+        //     var max = arr[0]; // arr[0]指的是arr这个数字第一各元素,用东西的话就是arr=[1,2,3]
+        //     for (var i = 1; i <= arr.length; i++) {
+        //         if (arr[i] > max) {
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return max;
+
+        // }
+        // var red = getArrMax([1, 2, 5, 7, 9]);
+        // console.log(red);
+
+        // 题目二
+        // function getMax(num1, num2) {
+        //     return num1 >= num2 ? num1 : num2;
+        // }
+        // var re = getMax(prompt('请输入第一个数'), prompt('请输入第二个数'));
+        // alert(re);
+        // function getMax(num1, num2) {
+        //     return num1 >= num2 ? num1 : num2;
+        // }
+        // var re = getMax(prompt('请输入数1'), prompt('请输入数2'));
+        // alert(re);
+
+
+
+        // function getMax(arr) {
+        //     var max = arr[0];
+        //     for (var i = 1; i <= arr.length; i++) {
+        //         if (arr[i] > max) {
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+        // var re = getMax([prompt('请输入第一个数字'), prompt('请输入第二个数字'), prompt('请输入第三个数字')]);
+        // alert(re);
+
+        // function getMax(arr) {
+        //     var max = arr[0];
+        //     for (var i = 1; i <= arr.length; i++) {
+        //         if (arr[i] > max) {
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+        // var re = getMax([prompt('请输入第一个数')], [prompt('请输入第er个数')], [prompt('请输入第saf个数')])
+        // alert(re);
+
+        // 第四题目
+        //     function pNum(num) {
+        //         var count = 0; //因子个数
+        //         for (var i = 1; i <= num; i++) {
+        //             if (num % i == 0) {
+        //                 count++;
+        //             }
+        //         }
+        //         if (count == 2) {
+        //             alert('他就是素数' + num);
+        //         } else {}
+        //         return;
+        //     }
+        //     pNum(prompt('请输入您的数字'));
+        //
+        // var psifm = {
+        //     personname: '鸣人',
+        //     persongender: 'nan',
+        //     personyear: 18,
+        //     Skill: function() {
+        //         console.log('影分身');
+
+        //     }
+
+
+
+        // }
+        // console.log(psifm.personname);
+        // console.log(psifm['personname']);
+
+        // var obj = new Object();
+        // obj.usename = '鸣人';
+        // obj.gender = '男';
+        // obj.Skill = function() {
+        //     console.log('影分身');
+
+        // }
+        // obj.Skill();
+        // console.log(obj.usename);
+        // console.log(obj['gender']);
+
+        // function Stars(name, year) {
+        //     this.name = name;
+        //     this.year = year;
+        //     this.Skill = function() {
+        //         console.log('singer');
+
+        //     }
+        // }
+        // var ldh = new Stars('ldh', 'nan');
+        // console.log(typeof ldh);
+        // console.log(ldh.name, '\n', ldh.year);
+
+
+        // 查找出所有o的索引号并打印出
+        // var arr = "osjfekljlsjfljdoooow";
+        // var index = arr.indexOf('o');
+        // var num = 0;
+        // while (index !== -1) {
+        //     console.log(index);
+        //     num++;
+        //     index = arr.indexOf('o', index + 1)
+        // }
+        // console.log(num);
+        // var index = 1
+        // var test = '0 -' + index + 'px';
+        // console.log(typeof test);
+    </script>
+
+</head>
+
+<body>
+    <!-- <input type="text" value="手机">
+    <script>
+        var text = document.querySelector('input');
+        text.onfocus = function() {
+            if (this.value === '手机') {
+                this.value = '';
+            }
+        }
+        text.onblur = function() {
+            if (this.value === '') {
+                this.value = '手机';
+            }
+        }
+    </script> -->
+    <!-- // 标段属性设置 -->
+    <!-- <button>dian</button>
+    <input type="text" value="请点击">
+    <script>
+        // 1.事件源
+        var btn = document.querySelector('button');
+        var input = document.querySelector('input');
+        // 事件类型
+        btn.onclick = function() {
+            input.value = 'dinajinle';
+            this.disabled = true;
+            // 时间函数调用者btn
+        } -->
+    <!-- </script> -->
+
+    <!-- 
+    <script>
+        var j_cbAll = document.getElementById('j_cbAll');
+        var j_tbs = document.getElementById('j_tbs').getElementsByTagName('input');
+        j_cbAll.onclick = function() {
+            for (var i = 0; i < j_tbs.length; i++){
+                j_tbs[i].checked = this.checked;
+            }
+
+        }
+        
+    </script> -->
+
+    <!-- <button>anniu</button>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        var ul = document.querySelector('ul');
+        var btn = document.querySelector('button');
+        btn.onclick = function() {
+            if (ul.children.length == 0) {
+                this.disabled = true;
+                // 禁用此按钮  
+
+            } else {
+                ul.removeChild(ul.children[0]);
+            }
+        }
+    </script> -->
+
+
+
+
+    <!-- 案例：评论栏 -->
+    <!-- <style>
+        textarea {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        
+        li {
+            border: 1px solid pink;
+            list-style: none;
+            width: 200px;
+        }
+    </style>
+
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>按钮</button>
+    <ul>
+
+    </ul>
+    <script>
+        // 按钮
+        var btn = document.querySelector('button');
+        // 文本框
+        var text = document.querySelector('textarea');
+        // ul
+        var ul = document.querySelector('ul');
+        btn.onclick = function() {
+            if (text.value == '') {
+                alert('您输入的内容为空');
+                return false;
+            } else {
+                // 创建元素
+                var li = document.createElement('li');
+                // 给元素赋值
+                li.innerHTML = text.value + "<a href='#'>删除</a>";
+                ul.insertBefore(li, ul.children[0]);
+                // 删除连接里面的li
+                var as = document.querySelectorAll('a');
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function() {
+                        ul.removeChild(this.parentNode);
+                    }
+
+                }
+
+            }
+        }
+    </script> -->
+
+
+    <!-- 案例添加表格 -->
+    <!-- <style>
+        table {
+            margin: 100px auto;
+            border-collapse: collapse;
+            border: 1px solid pink;
+        }
+        
+        table td,
+        th {
+            border: 1px solid pink;
+        }
+    </style>
+    <table>
+        <thead>
+            <th>姓名</th>
+            <th>科目</th>
+            <th>成绩</th>
+            <th>操作</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        // 1.准备好数据（数组里面放对象，对象里面  属性：冒号   引号  逗号）
+        var dates = [{
+            name: '朱宇豪',
+            subject: 'javascript',
+            socre: 10
+        }, {
+            name: '朱豪',
+            subject: 'javascript',
+            socre: 150
+        }, {
+            name: '宇豪',
+            subject: 'javascript',
+            socre: 90
+        }, {
+            name: '宇豪',
+            subject: 'javascript',
+            socre: 90
+        }, {
+            name: '宇豪',
+            subject: 'javascript',
+            socre: 90
+        }];
+        // 1.获取元素
+        var tbody = document.querySelector('tbody');
+        //2.在tbody里面放入行数dates.lenght  即tr个数
+        for (var i = 0; i < dates.length; i++) {
+            // 创建行  然后才能appendChild 加入  父级.appendChild（创建的子）
+            var tr = document.createElement('tr');
+            tbody.appendChild(tr);
+            // 3.for（var k in obj） 遍历数组或者对象  dates[i]
+            for (var k in dates[i]) {
+                var td = document.createElement('td');
+                td.innerHTML = dates[i][k];
+                tr.appendChild(td);
+            }
+            var td = document.createElement('td');
+            td.innerHTML = '<a href="javascript:;">删除</a>'
+            tr.appendChild(td);
+            //4. 删除操作 var as = document.querySelectorAll('a')这是个伪数组
+            var as = document.querySelectorAll('a');
+            for (var i = 0; i < as.length; i++) {
+                as[i].onclick = function() {
+                    tbody.removeChild(this.parentNode.parentNode);
+                }
+            }
+
+        } -->
+    <!-- </script> -->
+
+    <!-- 案例：键盘事件search -->
+    <!-- <input type="text">
+    <script>
+        var search = document.querySelector('input');
+        document.addEventListener('keyup', function(e) {
+            console.log(e.keyCode);
+            // if (e.keyCode === 83) {
+            //     search.focus();
+            // }
+        }, )
+    </script> -->
+
+
+    <!-- 案例:京东定时器 -->
+    <!-- <style>
+        span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+    <span class='hour'>1</span>
+    <span class='minute'>2</span>
+    <span class='second'>3</span>
+    <script>
+        // 1.获取元素
+        var hour = document.querySelector('.hour');
+        var minute = document.querySelector('.minute');
+        var second = document.querySelector('.second');
+        // 1.1获取当前时间
+        var inputTime = +new Date('2020-5-1 18:00:00');
+        setInterval(countDown, 1000);
+
+        function countDown() {
+            var nowTime = +new Date();
+            var times = (inputTime - nowTime) / 1000;
+            var h = parseInt(times / 60 / 60 % 24);
+            h = h < 10 ? '0' + h : h;
+            hour.innerHTML = h;
+            var m = parseInt(times / 60 % 60);
+            m = m < 10 ? '0' + m : m;
+            minute.innerHTML = m;
+            var s = parseInt(times % 60);
+            s = s < 10 ? '0' + s : s;
+            second.innerHTML = s;
+        }
+    </script> -->
+
+    <!-- 发送短信按钮 -->
+    <input type="text">
+    <button>发送</button>
+    <script>
+        // 1. 发送按钮点击以后禁用disabel
+        // 2.禁用以后button里面的innerHtml变化为 '倒计时'+time+'秒数'
+        // 3.time--
+        // 4.当time==0时，button还原初始状态
+        var btn = document.querySelector('button');
+        var time = 3;
+        btn.addEventListener('click', function() {
+            btn.disabled = true;
+            var timer = setInterval(function() {
+                if (time == 0) {
+                    clearInterval(timer);
+                    btn.disabled = false;
+                    time = 3;
+                    btn.innerHTML = '发送';
+                } else {
+                    btn.innerHTML = '倒计时' + time + '秒数';
+                    time--;
+                }
+            }, 1000)
+
+        })
+    </script>
+
+
+</body>
+
+</html>
