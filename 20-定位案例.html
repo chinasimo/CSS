@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+	}
+	.box {
+		position: relative;
+		width: 300px;
+		height: 200px;
+		background-color: pink;
+		margin: 200px auto;
+	}
+	.arrow-l,
+	.arrow-r {
+		position: absolute;
+		width: 20px;
+		height: 30px;
+		background: rgba(0,0,0,.2);
+		color: #fff;
+		text-align: center;
+		line-height: 30px; 
+		
+	}
+	.arrow-l{
+		right: 0px;
+		top: 50%;
+		margin-top: -15px; 
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px; 
+	}
+	.arrow-r {		
+		top: 50%;
+		margin-top: -15px; 
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px; 
+	}
+	.circle {
+		position: absolute;
+		left: 50%;
+		margin-left: -35px;
+		bottom: 15px; 
+		width: 70px;
+		height: 13px;
+		background-color: red;
+		background: rgba(0,0,0,.3);
+		border-radius: 7px;
+	}
+	.circle li {
+		float: left;
+		width: 8px;
+		height: 8px;
+		border-radius: 4px;
+		background-color: pink;
+		margin: 3px;
+	}
+	.circle .current {
+		background-color: white;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="../images/3.jpg" alt="">
+		<div class="arrow-l"><</div>
+		<div class="arrow-r">></div>
+		<div class="circle">
+			<ul>
+				<li></li>
+				<li></li>
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
